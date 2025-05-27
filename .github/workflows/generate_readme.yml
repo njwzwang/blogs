@@ -37,7 +37,7 @@ jobs:
 
       - name: Push README
         run: |
-          git config --local user.email "njwzwan@gmail.com"
+          git config --local user.email "njwzwang@gmail.com"
           git config --local user.name "wells"
           git add BACKUP/*.md
           git commit -a -m 'update new blog' || echo "nothing to commit"
