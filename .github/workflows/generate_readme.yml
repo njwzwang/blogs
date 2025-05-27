@@ -39,6 +39,6 @@ jobs:
         run: |
           git config --local user.email "njwzwang@gmail.com"
           git config --local user.name "wells"
-          git add BACKUP/*.md
-          git commit -a -m 'update new blog' || echo "nothing to commit"
+          git commit -a -m 'update new blog' || echo "nothing to commit"  
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/njwzwang/blogs.git
           git push || echo "nothing to push"
